@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Picaña | Restaurante</title>
+    <link rel="icon" type="image/png" href="img/logoPicañaBlanco.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aos.css"/>
+</head>
+<body>
+
+    <!-- Nav Menu -->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <a id="title" class="navbar-brand pl-4" href="index.html">La Picaña</a>
+        <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center pr-4" id="navbarNav">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link active" href="#">Inicio</a>
+                <a class="nav-item nav-link" href="menu.html">Menú</a>
+                <a class="nav-item nav-link" href="#Reservaciones">Reservas</a>
+                <a class="nav-item nav-link" href="#Ubicacion">Ubicación</a>
+            </div>
+            <div>
+                <a href="index_pt.html" id="idioma" class="btn btn-secondary btn-xs active" role="button" aria-pressed="true">Portugués</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <header id="hero-container">
+        <div id="hero-background">
+            <div class="row">
+                <div data-aos="fade-down" id="hero-content" class="col-8 col-md-3 m-auto d-flex">
+                    <div class="align-self-center text-center w-100">
+                        <img src="img/logoPicaña.png" alt="La picaña logo">
+                        <h1>La Picaña</h1>
+                        <hr>
+                        <p>Parrillada & Restaurante</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Us -->
+
+    <div id="container" class="row no-gutters justify-content-center">
+        <div data-aos="zoom-out" id="about" class="col-md-6 m-auto">
+            <div id="about_content">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    Cocina típica uruguaya utilizando carnes nacionales, asadas a la parrilla y una extensa variedad de acompañamientos como, risottos, pastas, ensalada, chivitos y pizzería.
+                    <br>
+                    <br>
+                    Somos comprometidos con la excelencia en la calidad, sabor y atención a nuestros clientes.
+
+                </p>
+                <p>Calidad excepcional por más de 20 años</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- News -->
+
+    <div id="news_background" class="row no-gutters">
+        <div class="col-md-6 contenedores_info">
+            <div class="container article_div">
+                <img  data-aos="fade" src="img/ofertas.jpg" alt="Carne a la parrilla" class="mx-auto">
+                <div  data-aos="fade-down" id="ofertas">
+                    <img src="img/loudspeaker.png" alt="Megafono">
+                    <h2>Ofertas Especiales</h2>
+                    <p>Contamos con las mejores ofertas Semanales de la mejor comida de Rivera, además de grandiosos platos del día, que abarcan una gran variedad de gustos.</p>
+                    <div class="text-center">
+                        <button id="menu_btn" class="btn mx-auto">Revisa las Ofertas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 contenedores_info">
+            <div class="container article_div">
+                <img  data-aos="fade" src="img/menu.jpg" alt="Asador" class="mx-auto">
+                <div  data-aos="fade-down" id="menu">
+                    <img src="img/menu.png" alt="Megafono">
+                    <h2>Menú Exclusivo</h2>
+                    <p>Disfruta de nuestra extensa carta que abarca desde los mejores cortes de carnes, una gran variedad y tipos de pastas, ensaladas y los mejores vinos regionales, al alcance de tu paladar.</p>
+                    <div class="text-center">
+                        <a href="menu.html"><button id="menu_btn" class="btn mx-auto">Ver Menú</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservaciones -->
+    
+    <div data-aos="fade-down" id="Reservaciones" class="container">
+        <h2>Reservaciones Web</h2>
+        <p>La reservación será aceptada cuando reciba un Email de confirmación o un mensaje</p>
+        <form action="" method="post" class="form-horizontal row">
+            <div class="form-group col-md-6">
+                <label for="fecha">Fecha * </label>
+                <input type="date" id="fecha" class="form-control" name="fecha" placeholder="" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="hora">Hora * </label>
+                <select name="hora" id="hora" class="form-control" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="8">8:00 am</option>
+                    <option value="9">9:00 am</option>
+                    <option value="10">10:00 am</option>
+                    <option value="11">11:00 am</option>
+                    <option value="12">12:00 pm</option>
+                    <option value="13">13:00 pm</option>
+                    <option value="14">14:00 pm</option>
+                    <option value="15">15:00 pm</option>
+                    <option value="16">16:00 pm</option>
+                    <option value="17">17:00 pm</option>
+                    <option value="18">18:00 pm</option>
+                    <option value="19">19:00 pm</option>
+                    <option value="20">20:00 pm</option>
+                    <option value="21">21:00 pm</option>
+                    <option value="22">22:00 pm</option>
+                    <option value="23">23:00 pm</option>
+                </select>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="cant">Cantidad de Personas * </label>
+                <select name="cant" id="cant" class="form-control" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="7">7 personas</option>
+                    <option value="8">8 personas</option>
+                    <option value="9">9 personas</option>
+                    <option value="10">10 personas</option>
+                    <option value="10">+10 personas</option>
+                </select>
+            </div>
+            <div class="form-group col-md-12">
+                <label for="nombre">Nombre de quien Reserva * </label>
+                <input type="text" id="nombre" class="form-control" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">Email * </label>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Correo electronico de contacto" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="telefono">Teléfono * </label>
+                <input type="tel" id="telefono" class="form-control" name="telefono" placeholder="Telefono de contacto" required>
+            </div>
+            <div class="form-group col-md-12 text-center">
+                <input type="submit" value="Reservar" id="submit" class="btn">
+            </div>
+        </form>
+    </div>
+
+    <div id="Ubicacion" class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d855.8401798101577!2d-55.54310211848557!3d-30.90453992741478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e23dcb1a68b715b!2sLa%20Pica%C3%B1a!5e0!3m2!1ses!2suy!4v1614796556962!5m2!1ses!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+    <!-- Footer -->
+
+    <footer>
+        <div class="row no-gutters d-flex p-2">
+            <div id="information" class="col-md-4 text-center align-self-center info_footer">
+                <img data-aos="fade-right" src="img/logoPicañaBlanco.png" alt="La picaña logo">
+                <h3 data-aos="fade-right">La Picaña</h3>
+            </div>
+            <div id="time" class="col-md-4 text-center align-self-center info_footer">
+                <p data-aos="fade-right">Lunes a Domingo 8:00 a 23:00</p>
+                <p data-aos="fade-right">Direccion: Av. Sarandi Nº822</p>
+                <p data-aos="fade-right">Tel: 4623 4867</p>
+            </div>
+            <div id="social" class="col-md-4 text-center align-self-center info_footer">
+                <a href="https://www.instagram.com/lapicanaparrillada/" target="_blank" id="instagram"><p data-aos="fade-right">Instagram</p></a>
+                <a href="https://www.facebook.com/lapicanaoficial" target="_blank" id="facebook"><p data-aos="fade-right">Facebook</p></a>
+            </div>
+        </div>
+        <div id="copy" class="row no-gutters p-2">
+            <div class="col-md-12 text-center">
+                <p">© Copyright La Picaña | Desarrollado por ...</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

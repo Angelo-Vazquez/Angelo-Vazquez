@@ -1,0 +1,492 @@
+/* Paleta de colores */
+ /* 
+ - Marron oscuro #262123
+ - Amarillo mostaza #F2A057
+ - Naranja #BF6A4B
+ - Beige #D9B1A3
+ - Rojo #BF3030 
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Great+Vibes&family=Oswald:wght@200&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #E0DCDA;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1rem;
+}
+
+    /* Navbar styles */
+
+.navbar{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    background-color: #262123 !important;
+}
+
+
+#title{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+#idioma{
+    background-color: #BF6A4B;
+    border-color: white;
+}
+
+    /* Header styles */
+
+#hero-container{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/c.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+#hero-background{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38, 33, 35, .5);
+}
+
+#hero-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -125px;
+    background-color: #f7f0eb;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 2px;
+    z-index: 150;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+#hero-content p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#hero-content img{
+    width: 80%;
+}
+
+#hero-content p{
+    padding-bottom: 40px;
+}
+
+    /* About us */
+
+#container{
+    width: 90%;
+    height: 600px;
+    margin: 200px auto;
+    position: relative;
+    z-index: 100;
+    background-image: url("../img/About.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+}
+
+#about{
+    padding: 30px;
+    position: absolute;
+    bottom: -100px;   
+    background-color: white;
+}
+
+    /* About us content */
+
+#about_content{
+    height: 59%;
+}
+
+#about_content h2{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: 'Cinzel', serif;
+    color: #F2A057;
+    font-weight: bold;
+}
+
+#about_content p:nth-child(2){
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+}
+
+#about_content p:nth-child(3){
+    padding-top: 20px;
+    font-family: 'Tangerine', cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: #BF3030;
+}
+
+    /* News */
+
+#news_background{
+    height: 1200px;
+    position: relative;
+}    
+
+#news_background:before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("../img/section_info.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    filter: blur(3px);
+}    
+
+#news_background .container{
+    width: 90%;
+    position: relative;
+}    
+
+#news_background img{
+    width: 100%;
+    height: 450px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.contenedores_info{
+    margin-top: 70px;
+}
+
+#ofertas{
+    width: 80%;
+    height: 600px;
+    margin-left: 9%;
+    margin-top: -100px;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#ofertas:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/estampado.jpg);
+    z-index: 50;
+    opacity: 0.15;
+}
+
+#ofertas img{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: calc(50% - 75px);
+    position: relative;
+    z-index: 100;
+}
+
+#ofertas h2{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+#ofertas p{
+    padding: 0px 50px 50px 50px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+#menu{
+    width: 80%;
+    height: 600px;
+    margin-left: 9%;
+    margin-top: -100px;
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#menu:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/estampado.jpg);
+    z-index: 50;
+    opacity: 0.15;
+}
+
+#menu img{
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: calc(50% - 75px);
+    position: relative;
+    z-index: 100;
+}
+
+#menu h2{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+#menu p{
+    padding: 0px 50px 50px 50px;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+
+#menu_btn{
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: #F2A057;
+    transition: 0.2s;
+    position: relative;
+    z-index: 100;
+}
+
+#menu_btn:hover{
+    padding: 12px 25px;
+    background-color: #ffb06b;
+}
+
+    /* Form styles */
+
+#Reservaciones h2{
+    padding-top: 100px;
+}
+
+.container h2{
+    font-family: 'Cinzel', serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.container p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+form{
+    margin-top: 40px;
+}
+
+form label{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+
+#submit{
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    background-color: #F2A057;
+    transition: 0.2s;
+}
+
+#submit:hover{
+    padding: 12px 25px;
+    background-color: #ffb06b;
+}
+
+    /* Iframe */
+
+iframe{
+    margin-top: 40px;
+    width: 100%;
+}
+
+    /* Footer */
+
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background-color: #262123;
+    color: white;
+}
+
+footer img{
+    width: 150px;
+}
+
+#footer_img{
+    margin-top: -20px;
+}
+
+#footer_img h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+}
+
+.footer_t{
+    padding: 20px;
+}
+
+#information{
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+#information img{
+    margin-top: -30px;
+}
+
+#time{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+
+}
+
+#time h3{
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    padding: 20px;
+}
+
+#social{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+
+}
+
+#social a{
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+#social a:hover{
+    cursor: pointer !important;
+}
+
+#social h3{
+    font-family: 'Cinzel', serif;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+#instagram:hover{
+    color: #c750bd ;
+}
+
+#facebook:hover{
+    color: #512aff ;
+}
+
+#copy{
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+#copy{
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    background-color: #241f21;
+}
+
+@media only screen and (max-width: 768px){
+
+    /* Header */
+
+    #hero-container{
+        height: 350px;
+    }
+   
+    /* News */
+
+    .article_div img{
+        display: none;
+    }
+
+    #ofertas{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    #ofertas:before{
+        margin-top: -20px;
+        margin-left: -20px;
+        border-radius: 10px;
+    }
+
+    #menu{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        margin-left: 0;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    #menu:before{
+        margin-top: -20px;
+        margin-left: -20px;
+        border-radius: 10px;
+    }
+}
+
