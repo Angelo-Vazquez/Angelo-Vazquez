@@ -355,7 +355,7 @@ footer{
 }
 
 footer img{
-    width: 150px;
+    width: 200px;
 }
 
 #footer_img{
@@ -449,6 +449,10 @@ footer img{
         height: 350px;
     }
    
+    #hero-content h1{
+        font-size: 2rem;
+    }
+
     /* News */
 
     .article_div img{
